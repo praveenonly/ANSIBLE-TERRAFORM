@@ -1,0 +1,74 @@
+I, [2022-09-29T19:26:39.215443 #4518]  INFO -- default-terraform: -----> Destroying <default-terraform>...
+W, [2022-09-29T19:26:39.216117 #4518]  WARN -- default-terraform: Reading the Terraform client version...
+I, [2022-09-29T19:26:39.256980 #4518]  INFO -- default-terraform: Terraform v1.3.0
+I, [2022-09-29T19:26:39.257134 #4518]  INFO -- default-terraform: on linux_amd64
+I, [2022-09-29T19:26:39.257200 #4518]  INFO -- default-terraform: + provider registry.terraform.io/hashicorp/google v4.38.0
+I, [2022-09-29T19:26:39.257242 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:39.257270 #4518]  INFO -- default-terraform: Your version of Terraform is out of date! The latest version
+I, [2022-09-29T19:26:39.257307 #4518]  INFO -- default-terraform: is 1.3.1. You can update by downloading from https://www.terraform.io/downloads.html
+W, [2022-09-29T19:26:39.269583 #4518]  WARN -- default-terraform: Finished reading the Terraform client version.
+W, [2022-09-29T19:26:39.269751 #4518]  WARN -- default-terraform: Verifying the Terraform client version is in the supported interval of >= 0.11.4, < 2.0.0...
+W, [2022-09-29T19:26:39.270019 #4518]  WARN -- default-terraform: Finished verifying the Terraform client version.
+W, [2022-09-29T19:26:39.270088 #4518]  WARN -- default-terraform: Initializing the Terraform working directory...
+I, [2022-09-29T19:26:39.308080 #4518]  INFO -- default-terraform: [0m[1mInitializing modules...[0m
+I, [2022-09-29T19:26:39.312126 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:39.312418 #4518]  INFO -- default-terraform: [0m[1mInitializing the backend...[0m
+I, [2022-09-29T19:26:39.564315 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:39.564548 #4518]  INFO -- default-terraform: [0m[1mInitializing provider plugins...[0m
+I, [2022-09-29T19:26:39.564607 #4518]  INFO -- default-terraform: - Reusing previous version of hashicorp/google from the dependency lock file
+I, [2022-09-29T19:26:39.909889 #4518]  INFO -- default-terraform: - Using previously-installed hashicorp/google v4.38.0
+I, [2022-09-29T19:26:39.910214 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:39.910517 #4518]  INFO -- default-terraform: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2022-09-29T19:26:39.923165 #4518]  WARN -- default-terraform: Finished initializing the Terraform working directory.
+W, [2022-09-29T19:26:39.923370 #4518]  WARN -- default-terraform: Selecting the kitchen-terraform-default-terraform Terraform workspace...
+W, [2022-09-29T19:26:40.218539 #4518]  WARN -- default-terraform: Finished selecting the kitchen-terraform-default-terraform Terraform workspace.
+W, [2022-09-29T19:26:40.218717 #4518]  WARN -- default-terraform: Destroying the Terraform-managed infrastructure...
+I, [2022-09-29T19:26:41.337879 #4518]  INFO -- default-terraform: [0m[1mmodule.storage.google_storage_bucket.bucket: Refreshing state... [id=pkbucket29sept2022][0m
+I, [2022-09-29T19:26:41.752931 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:41.753208 #4518]  INFO -- default-terraform: Terraform used the selected providers to generate the following execution
+I, [2022-09-29T19:26:41.753257 #4518]  INFO -- default-terraform: plan. Resource actions are indicated with the following symbols:
+I, [2022-09-29T19:26:41.753292 #4518]  INFO -- default-terraform:   [31m-[0m destroy
+I, [2022-09-29T19:26:41.753321 #4518]  INFO -- default-terraform: [0m
+I, [2022-09-29T19:26:41.753348 #4518]  INFO -- default-terraform: Terraform will perform the following actions:
+I, [2022-09-29T19:26:41.753374 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:41.754342 #4518]  INFO -- default-terraform: [1m  # module.storage.google_storage_bucket.bucket[0m will be [1m[31mdestroyed[0m[0m
+I, [2022-09-29T19:26:41.754416 #4518]  INFO -- default-terraform: [0m  [31m-[0m[0m resource "google_storage_bucket" "bucket" {
+I, [2022-09-29T19:26:41.754475 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mdefault_event_based_hold[0m[0m    = false [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754512 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mforce_destroy[0m[0m               = false [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754564 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mid[0m[0m                          = "pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754595 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mlabels[0m[0m                      = {
+I, [2022-09-29T19:26:41.754649 #4518]  INFO -- default-terraform:    [31m-[0m [0m"environment" = "test"
+I, [2022-09-29T19:26:41.754684 #4518]  INFO -- default-terraform:    [31m-[0m [0m"team"        = "dev"
+I, [2022-09-29T19:26:41.754723 #4518]  INFO -- default-terraform:  } [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754753 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mlocation[0m[0m                    = "EU" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754792 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mname[0m[0m                        = "pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754813 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mproject[0m[0m                     = "winter-charmer-363215" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754834 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mrequester_pays[0m[0m              = false [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754864 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mself_link[0m[0m                   = "https://www.googleapis.com/storage/v1/b/pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754888 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0mstorage_class[0m[0m               = "STANDARD" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754907 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0muniform_bucket_level_access[0m[0m = false [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754932 #4518]  INFO -- default-terraform:       [31m-[0m [0m[1m[0murl[0m[0m                         = "gs://pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.754958 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:41.754978 #4518]  INFO -- default-terraform:       [31m-[0m [0mversioning {
+I, [2022-09-29T19:26:41.755128 #4518]  INFO -- default-terraform:    [31m-[0m [0m[1m[0menabled[0m[0m = false [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.755160 #4518]  INFO -- default-terraform:  }
+I, [2022-09-29T19:26:41.755177 #4518]  INFO -- default-terraform:     }
+I, [2022-09-29T19:26:41.755198 #4518]  INFO -- default-terraform: 
+I, [2022-09-29T19:26:41.755220 #4518]  INFO -- default-terraform: [0m[1mPlan:[0m 0 to add, 0 to change, 1 to destroy.
+I, [2022-09-29T19:26:41.756227 #4518]  INFO -- default-terraform: [0m[0m
+I, [2022-09-29T19:26:41.756273 #4518]  INFO -- default-terraform: [1mChanges to Outputs:[0m[0m
+I, [2022-09-29T19:26:41.756302 #4518]  INFO -- default-terraform:   [31m-[0m [0m[1m[0mbucket_name[0m[0m      = "pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.756328 #4518]  INFO -- default-terraform:   [31m-[0m [0m[1m[0mbucket_self_link[0m[0m = "https://www.googleapis.com/storage/v1/b/pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:41.756352 #4518]  INFO -- default-terraform:   [31m-[0m [0m[1m[0mbucket_url[0m[0m       = "gs://pkbucket29sept2022" [90m->[0m [0m[90mnull[0m[0m
+I, [2022-09-29T19:26:42.122905 #4518]  INFO -- default-terraform: [0m[1mmodule.storage.google_storage_bucket.bucket: Destroying... [id=pkbucket29sept2022][0m[0m
+I, [2022-09-29T19:26:42.594122 #4518]  INFO -- default-terraform: [0m[1mmodule.storage.google_storage_bucket.bucket: Destruction complete after 1s[0m
+I, [2022-09-29T19:26:42.606791 #4518]  INFO -- default-terraform: [0m[1m[32m
+I, [2022-09-29T19:26:42.606873 #4518]  INFO -- default-terraform: Destroy complete! Resources: 1 destroyed.
+W, [2022-09-29T19:26:42.621173 #4518]  WARN -- default-terraform: Finished destroying the Terraform-managed infrastructure.
+W, [2022-09-29T19:26:42.621308 #4518]  WARN -- default-terraform: Selecting the default Terraform workspace...
+I, [2022-09-29T19:26:42.913855 #4518]  INFO -- default-terraform: [0m[0m[32mSwitched to workspace "default".[0m
+W, [2022-09-29T19:26:42.926927 #4518]  WARN -- default-terraform: Finished selecting the default Terraform workspace.
+W, [2022-09-29T19:26:42.927168 #4518]  WARN -- default-terraform: Deleting the kitchen-terraform-default-terraform Terraform workspace...
+I, [2022-09-29T19:26:43.213648 #4518]  INFO -- default-terraform: [0m[32mDeleted workspace "kitchen-terraform-default-terraform"![0m
+W, [2022-09-29T19:26:43.226487 #4518]  WARN -- default-terraform: Finished deleting the kitchen-terraform-default-terraform Terraform workspace.
+I, [2022-09-29T19:26:43.228165 #4518]  INFO -- default-terraform: Finished destroying <default-terraform> (0m4.01s).
